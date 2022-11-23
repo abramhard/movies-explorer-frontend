@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d ../build"
+    "deploy": "npm run build && scp -r ./build/* abramhard-movie@158.160.42.188:/home/abramhard-movie/movies-explorer-frontend"
   },
   "eslintConfig": {
     "extends": [

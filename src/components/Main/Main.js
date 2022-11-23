@@ -1,3 +1,4 @@
+import "./Main.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Promo from "./Promo/Promo";
@@ -13,11 +14,13 @@ function Main({ loggedIn }) {
                 loggedIn={loggedIn}
                 onMainHeader={true}
             />
-            <Promo />
-            <AboutProject />
-            <Techs />
-            <AboutMe />
-            <Portfolio />
+            <main>
+                <Promo />
+                <AboutProject />
+                <Techs />
+                <AboutMe />
+                <Portfolio />
+            </main>
             <Footer />
         </>
     );
